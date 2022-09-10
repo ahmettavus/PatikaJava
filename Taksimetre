@@ -1,0 +1,29 @@
+package Patika;
+
+import java.util.Scanner;
+
+public class TaksimetreHesabi {
+    public static void main(String[] args) {
+        System.out.println("Taksimetre Uygulamasina Hosgeldiniz!!");
+
+        double perKm = 2.2, total = 10;
+
+        Scanner km = new Scanner(System.in);
+
+        double kmDegeri = km.nextDouble();
+
+        total += kmDegeri * perKm;
+
+
+        total = (total < 20) ? 20 : total;
+        System.out.println("Taksimetre Fiyatiniz : " + total);
+
+
+
+
+
+
+
+
+    }
+}
