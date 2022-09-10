@@ -1,0 +1,24 @@
+package Patika;
+
+import java.util.Scanner;
+
+public class VucudKitleEndeksi {
+
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+
+        System.out.println("Lutfen Kilo Bilgisi Giriniz! ");
+        double kilo = input.nextDouble();
+
+        System.out.println("Lutfen Boy Bilgisi Giriniz! ");
+
+        double boy = input.nextDouble();
+
+        double kitleEndeksi = kilo/(boy*boy);
+
+        System.out.println("Vucut Kitle Endeksi Degeriniz :" + kitleEndeksi);
+
+
+    }
+}
