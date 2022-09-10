@@ -1,0 +1,20 @@
+package Patika;
+import java.util.Scanner;
+public class KdvHesabi {
+    public static void main(String[] args) {
+
+        double fiyat, kdvOran =0.18;
+        Scanner input = new Scanner(System.in);
+        System.out.println("Ucret Tutarini Giriniz !");
+        fiyat = input.nextDouble();
+
+        double kdvTutari = fiyat * kdvOran;
+
+
+        System.out.println("KDV'siz Tutar :" + fiyat);
+        System.out.println("KDV'li Tutar : " + (fiyat+=kdvTutari));
+        System.out.println("KDV Tutariniz : " + kdvTutari);
+
+
+    }
+}
