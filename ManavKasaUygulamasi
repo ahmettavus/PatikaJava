@@ -1,0 +1,34 @@
+package Patika;
+
+import java.util.Scanner;
+
+public class ManavKasaUygulamasi {
+    public static void main(String[] args) {
+
+        double armut = 2.14, elma = 3.67,domates = 1.11, muz = 0.95,patlican = 5;
+
+
+        Scanner input  = new Scanner(System.in);
+        System.out.println("Kac kilo armut aldiniz? : ");
+
+        double armutDegeri = input.nextDouble();
+
+        System.out.println("Kac kilo elma aldiniz? : ");
+
+        double elmaDegeri = input.nextDouble();
+
+        System.out.println("Kac domates armut aldiniz? : ");
+
+        double domatesDegeri = input.nextDouble();
+
+        System.out.println("Kac muz armut aldiniz? : ");
+
+        double muzDegeri = input.nextDouble();
+
+        System.out.println("Kac patlican armut aldiniz? : ");
+
+        double patlicanDegeri = input.nextDouble();
+
+        double toplam = (armut * armutDegeri) + (elma * elmaDegeri) + (domatesDegeri* domates) + (muz*muzDegeri) + (patlican * patlicanDegeri);
+
+        System.out.println("Toplam Odemeniz Gereken Tutar : " + toplam + "TL");
