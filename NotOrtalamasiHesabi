@@ -1,0 +1,39 @@
+package Patika;
+
+import java.util.Scanner;
+
+public class NotOrtalamasiHesabi {
+    public static void main(String[] args) {
+
+        //Degiskenlerimizi olusturduk!
+
+        int mat,fizik,kimya,tarih,muzik;
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Matematik Notunuz : ");
+        mat = input.nextInt();
+
+        System.out.println("Fizik Notunuz : ");
+        fizik = input.nextInt();
+
+        System.out.println("Kimya Notunuz : ");
+        kimya = input.nextInt();
+
+        System.out.println("Tarik Notunuz : ");
+        tarih = input.nextInt();
+
+        System.out.println("Muzik Notunuz : ");
+        muzik = input.nextInt();
+
+        double ortalama = (mat+fizik+kimya+tarih+muzik)/5.0;
+
+        System.out.println("ORtalamaniz : " + ortalama);
+
+
+        System.out.println(ortalama > 60 ? "Sinifi Gecti" : "Sinifta Kaldi!!");
+
+
+
+
+    }
+}
