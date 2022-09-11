@@ -1,0 +1,30 @@
+package Patika.KosulIfadeler;
+
+import java.util.Scanner;
+
+public class KullaniciGirisi {
+    public static void main(String[] args) {
+        String username, password;
+
+        Scanner input = new Scanner(System.in);
+
+        System.out.println("Lutfen Kullanici Adinizi Giriniz!!");
+        username = input.nextLine();
+
+        System.out.println("Lutfen Sifrenizi Giriniz!!");
+
+        password = input.nextLine();
+
+        if (username.equals("patika") && password.equals("java123")){
+
+            System.out.println("Giris Yaptiniz Tebrikler!");
+
+
+        }else {
+
+            System.out.println("Bilgileriniz Yanlis lutfen kontrol ediniz!");
+        }
+
+
+    }
+}
