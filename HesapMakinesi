@@ -1,0 +1,38 @@
+package Patika.KosulIfadeler;
+
+import java.util.Scanner;
+
+public class HesapMakinesi {
+    public static void main(String[] args) {
+
+        double a,b;
+        int select;
+        Scanner input = new Scanner(System.in);
+        System.out.println("Ilk Sayiyi Giriniz!");
+        a = input.nextDouble();
+        System.out.println("Ikinci Sayiyi Giriniz!");
+        b = input.nextDouble();
+        System.out.println("1 - Toplama \n 2-Cikarma\n 3-Carpma\n 4-Bolme \n");
+        select = input.nextInt();
+
+        switch (select){
+            case 1 :
+                System.out.println("Toplama Sonucunuz : " + (a+b));
+                break;
+            case 2:
+                System.out.println("Cikarma Sonucunuz : " + (a-b));
+                break;
+
+            case 3:
+                System.out.println("Carpma Sonucunuz : " + (a*b));
+                break;
+
+            case 4:
+                System.out.println("Bolme Sonucunuz :" + (a/b));
+                break;
+        }
+
+
+
+    }
+}
