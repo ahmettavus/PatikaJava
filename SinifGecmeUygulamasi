@@ -1,0 +1,40 @@
+package Patika.KosulIfadeler;
+
+import java.util.Scanner;
+
+public class SinifGecmeUygulamasi {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int mat,fizik,kimya,turkce,muzik;
+
+        System.out.println("Uygulamamiza Hosgeldiniz!");
+
+        System.out.println("Lutfen Matematik Ders Notunuzu giriniz!");
+        mat = input.nextInt();
+
+        System.out.println("Lutfen Fizik Ders Notunuzu giriniz!");
+        fizik = input.nextInt();
+
+        System.out.println("Lutfen Kimya Ders Notunuzu giriniz!");
+        kimya = input.nextInt();
+
+        System.out.println("Lutfen Turkce Ders Notunuzu giriniz!");
+        turkce = input.nextInt();
+
+        System.out.println("Lutfen Muzik Ders Notunuzu giriniz!");
+        muzik = input.nextInt();
+
+        double average = (fizik+mat+kimya+muzik+turkce)/5;
+
+        if (average >= 55){
+            System.out.println("Tebrikler Dersi Gectiniz!"+ average);
+        }else {
+            System.out.println("Derslerden Kaldiniz" + average);
+        }
+
+
+
+
+
+    }
+}
