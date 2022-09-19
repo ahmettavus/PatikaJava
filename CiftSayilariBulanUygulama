@@ -1,0 +1,27 @@
+package Patika.Donguler.KonuTekrarlari;
+
+import java.util.Scanner;
+
+public class CiftSayiBulanUygulama {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Sayi Giriniz :");
+        int sayi = input.nextInt();
+        int ortalama = 0, n = 0;
+
+        for (int i = 1; i <= sayi; i++){
+            if (i % 3 == 0 && i % 4 == 0){
+                ortalama += i;
+                n++;
+
+            }
+
+        }
+
+        System.out.println("Avarage numbers : " + ortalama/n);
+
+
+
+    }
+}
