@@ -1,0 +1,23 @@
+package Patika.Donguler.KonuTekrarlari;
+
+import java.util.Scanner;
+
+public class IkininKuvvetleri {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        System.out.print("Lutfen Sayi Giriniz!");
+        int i = input.nextInt();
+        for (int sayi = 1; sayi <= i; sayi *= 4) {
+            System.out.println("Dordun katlari olan sayilar  " + sayi);
+
+
+        }
+
+        System.out.println("5 in Katlari");
+        for (int sayi = 1; sayi <= i; sayi *= 5) {
+            System.out.println("5 in katlari olan sayilar  " + sayi);
+        }
+
+    }
+}
