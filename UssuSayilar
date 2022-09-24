@@ -1,0 +1,25 @@
+package Patika.Donguler.KonuTekrarlari;
+
+import java.util.Scanner;
+
+public class UsluSayilar {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        int sayi,kuvvet;
+        System.out.println("Ussu alinacak sayiyiyi lutfen giriniz!!");
+        sayi = input.nextInt();
+
+        System.out.println("Ussu olacak sayiyi lutfen giriniz!");
+        kuvvet= input.nextInt();
+        int total = 1;
+
+        for (int i = 1; i<=kuvvet; i++){
+
+            total *=sayi;
+
+        }
+
+        System.out.println(total);
+    }
+}
