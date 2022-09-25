@@ -1,0 +1,21 @@
+package Patika.Donguler.KonuTekrarlari;
+
+import java.util.Scanner;
+
+public class HarmonikSeries {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        // Finding out the Harmonic Series algorithm
+        System.out.println("Please fill in the n value : ");
+        int n = input.nextInt();
+        double result = 0;
+        for (double i =1; i<=n; i++){
+            result += (1/i);
+        }
+        System.out.println(result);
+
+
+    }
+
+}
