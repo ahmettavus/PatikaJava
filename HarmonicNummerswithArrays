@@ -1,0 +1,11 @@
+public class ArrayOrt {
+    public static void main(String[] args) {
+            double [] nummer = {1,2,3,4,234,89,32};
+        double sum = 0.0;
+
+        for (int i = 0; i< nummer.length; i++) {
+            sum += (1 / nummer[i]);
+        }
+        System.out.println(sum);
+    }
+}
